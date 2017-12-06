@@ -8,7 +8,7 @@ How to use:
 2. Download newsdata.sql from https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip 
 3. Put code & newsdata.sql into a new subdirectory in /vagrant
 4. Follow prepartion instructions on udacity, and create views as done in the bottom
-5. Run by typing "bash analysis.sh"
+5. Run by typing "python analysis.py"
 6. Check if correct.
 
 Sources: Udacity's Full Stack Web Developer NanoDegree Program
