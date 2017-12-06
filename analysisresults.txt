@@ -1,0 +1,29 @@
+vagrant@vagrant:/vagrant/loganalysis$ bash analysis.sh
+----Logs Analysis Tool for Udacity Backend Project----
+<any character> + <backspace> + <Enter> to see menu again.
+1) Top_Three_Articles   3) Days_Of_Many_Errors
+2) Authors_Ranking      4) Quit
+#? 1
+              title               | access
+----------------------------------+--------
+ Candidate is jerk, alleges rival | 338647
+ Bears love berries, alleges bear | 253801
+ Bad things gone, say good people | 170098
+(3 rows)
+
+#? 2
+          name          | access
+------------------------+--------
+ Ursula La Multa        | 507594
+ Rudolf von Treppenwitz | 423457
+ Anonymous Contributor  | 170098
+ Markoff Chaney         |  84557
+(4 rows)
+
+#? 3
+ date | percentage
+------+------------
+(0 rows)
+
+#? 4
+done
