@@ -1,13 +1,11 @@
 vagrant@vagrant:/vagrant/loganalysis/logAnalysis_Udacity$ python analysis.py
-------------------------------MENU------------------------------
+---------------Logs Analysis---------------
 1. Top 3 articles
 2. Authors ranking
 3. Days of many errors
 4. Print menu again
 5. Exit
--------------------------------------------------------------------
-Enter your choice [1-5]: a
-name 'a' is not defined
+-------------------------------------------
 Enter your choice [1-5]: 1
 Result of question 1
               title               | access
@@ -31,18 +29,21 @@ Result of question 2
 
 Enter your choice [1-5]: 3
 Result of question 3
- date | percentage
-------+------------
-(0 rows)
+     date     | percentage
+--------------+------------
+ Jul 17, 2016 |          2
+(1 row)
 
 
 Enter your choice [1-5]: 4
-------------------------------MENU------------------------------
+---------------Logs Analysis---------------
 1. Top 3 articles
 2. Authors ranking
 3. Days of many errors
 4. Print menu again
 5. Exit
--------------------------------------------------------------------
+-------------------------------------------
+Enter your choice [1-5]: a
+name 'a' is not defined
 Enter your choice [1-5]: 5
 Done

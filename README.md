@@ -19,4 +19,4 @@ create view articles_ranking as select articles.title, temp.access, articles.aut
 
 create view authors_ranking as select name, access from authors inner join (select author, sum(access) as access from articles_ranking group by author) as t on t.author = authors.id;
 
-create view daily_error_rates as select total.date, (error.count / total.count * 100) as percentage from (select substring(time::text from 0 for 11) as date, count(status) from log group by date) as total inner join (select substring(time::text from 0 for 11) as date, count(status) from log where status like '4%' or status like '5%' group by date) as error on total.date = error.date;
+create view daily_error_rates as select to_char(a.date, 'Mon DD, YYYY') as date, (a.errors * 100 / b.requests) as percentage from (select time::date as date, count(*) as errors from log where status != '200 OK' group by date) as a, (select time::date as date, count(*) as requests from log group by date) as b where a.date = b.date and (a.errors * 100 / b.requests) >= 1
