@@ -8,6 +8,7 @@ The assignment was to give answers to the following 3 questions.
 1) What are the 3 highest ranking articles and their access counts?
 2) What is the authors' ranking by access counts?
 3) In which day did errors occur more than 1% of the transactions?
+
 I created views to simplify the select statement in the python script, and these
 can be recreated by passing the 4 'create view' statements at the bottom to the
 news database.
